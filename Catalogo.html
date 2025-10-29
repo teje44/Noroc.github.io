@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NoroC Perfumeria</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+            <!-- loader -->
+<link rel="stylesheet" href="css/loader.css">
+            <!-- fevicon -->
+      <link rel="icon" href="images/Logo pw.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+<!-- Loader -->
+<div class="loader_bg">
+  <div class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Descubre tu esencia...</p>
+  </div>
+</div>
+
+      <!-- end loader -->
+<!-- header -->
+<header>
+   <div class="header">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-md navbar-light bg-white p-0">
+            <!-- LOGO -->
+            <a class="navbar-brand p-2" href="index.html">
+               <img src="images/Noroc.png" alt="NoroC" class="logo-img">
+            </a>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Principal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catalogo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Asesoria.html">Asesoria</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="carrito.html">👜 <span class="cart-count">0</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+</header>
+<!-- end header -->
+<div style="height: 2px; background-color: #009D71;"></div>
+<!-- 🏷️ Título destacado -->
+<div class="bg-light py-5 text-center">
+  <h2 class="titulo-catalogo"> Nuestros Perfumes Estrella </h2>
+</div>
+<!-- 🛍️ Controles de catálogo -->
+<div class="catalog-controls">
+  <input type="text" id="searchInput" placeholder="Buscar perfume..." />
+  
+  <select id="categoryFilter">
+    <option value="all">Todas las categorías</option>
+    <option value="floral">Floral</option>
+    <option value="amaderado">Amaderado</option>
+    <option value="citrico">Cítrico</option>
+    <option value="oriental">Oriental</option>
+    <option value="unisex">Unisex</option>
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+  </select>
+</div>
+
+<div class="product-grid">
+  <div class="product-card" data-name="acqua di gio" data-category="masculino citrico">
+    <!-- contenido del producto -->
+  </div>
+  <div class="product-card" data-name="le male" data-category="masculino oriental">
+    <!-- contenido del producto -->
+  </div>
+  <div class="product-card" data-name="aventus" data-category="unisex amaderado">
+    <!-- contenido del producto -->
+  </div>
+</div>
+
+
+<!-- 📦 CATÁLOGO DE PERFUMES -->
+<section class="productos py-5 bg-light">
+  <div class="row justify-content-center">
+
+    <!-- Tarjeta 1 - Dior -->
+    <div class="col-md-4 mb-4 product-card" data-name="sauvage dior" data-category="masculino amaderado">
+      <div class="card">
+        <img src="images/Dior.png" class="card-img-top" alt="Sauvage de Dior">
+        <div class="card-body">
+          <h5 class="card-title">Perfume Sauvage de Dior</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Sauvage de Dior es una fragancia audaz e intensa inspirada en paisajes salvajes y cielos azules.</p>
+          <a href="Perfumes/DIOR.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 - Carolina Herrera -->
+    <div class="col-md-4 mb-4 product-card" data-name="carolina herrera" data-category="Femenino">
+      <div class="card">
+        <img src="images/carolina.png" class="card-img-top" alt="Carolina Herrera">
+        <div class="card-body">
+          <h5 class="card-title">Carolina Herrera 212 VIP Men</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">El aroma de la fiesta exclusiva: vodka helado, lima y especias exóticas.</p>
+          <a href="Perfumes/CH.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 - One Million -->
+    <div class="col-md-4 mb-4 product-card" data-name="one million" data-category="masculino oriental">
+      <div class="card">
+        <img src="images/OneMillion.png" class="card-img-top" alt="One Million">
+        <div class="card-body">
+          <h5 class="card-title">One Million</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Lujo y extravagancia en una fragancia con notas de canela, cuero y ámbar.</p>
+          <a href="Perfumes/1million.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 - Acqua di Gio -->
+    <div class="col-md-4 mb-4 product-card" data-name="acqua di gio" data-category="masculino citrico">
+      <div class="card">
+        <img src="images/agua.png" class="card-img-top" alt="Acqua di Gio">
+        <div class="card-body">
+          <h5 class="card-title">Acqua di Gio</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Frescura marina con un toque de sofisticación.</p>
+          <a href="Perfumes/acqua.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 - Jean Paul Gaultier -->
+    <div class="col-md-4 mb-4 product-card" data-name="jean paul gaultier le male" data-category="masculino oriental">
+      <div class="card">
+        <img src="images/jpgaultier.png" class="card-img-top" alt="Jean Paul Gaultier Le Male">
+        <div class="card-body">
+          <h5 class="card-title">Jean Paul Gaultier "Le Male"</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Una mezcla provocativa de lavanda, menta y vainilla que evoca sensualidad y rebeldía.</p>
+          <a href="Perfumes/jpgaultier.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 - Creed Aventus -->
+    <div class="col-md-4 mb-4 product-card" data-name="creed aventus" data-category="unisex amaderado">
+      <div class="card">
+        <img src="images/creed.png" class="card-img-top" alt="Creed Aventus">
+        <div class="card-body">
+          <h5 class="card-title">Creed Aventus</h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Audaz y sofisticado, con notas frutales y ahumadas.</p>
+          <a href="Perfumes/creed.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+        <!-- Tarjeta 6 - Noroc tarro 1 -->
+    <div class="col-md-4 mb-4 product-card" data-name="Perfume de " data-category="unisex">
+      <div class="card">
+        <img src="images/perfume.png" class="card-img-top" alt="Tarro noroc">
+        <div class="card-body">
+          <h5 class="card-title">Perfume de </h5>
+          <p class="card-price"><strong>$49.900 COP</strong></p>
+          <p class="card-text">Elige el perfume que desees.</p>
+          <a href="Perfumes/Perfume pers.html" class="btn btn-noroc">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- 🔒 cierre de ROW -->
+</section> <!-- 🔒 cierre de SECTION -->
+<!-- End of product section -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Redes sociales -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Síguenos</h3>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/Noroc.Perfumeria/?locale=es_LA" class="social-btn" aria-label="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/noroc.perfumeria" class="social-btn" aria-label="Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-text">Descubre la esencia de NoroC. Conectamos emociones a través del aroma.</p>
+      </div>
+
+      <!-- Ayuda -->
+      <div class="col-md-3 col-sm-6">
+        <h3>¿Necesitas ayuda?</h3>
+        <p class="footer-text">Estamos aquí para asesorarte en tu elección perfecta.</p>
+        <ul class="contact_info">
+          <li><i class="fa fa-envelope"></i> norocperfumeria@gmail.com</li>
+          <li><i class="fa fa-phone"></i> +57 302 6010600</li>
+          <li><i class="fa fa-map-marker"></i> Sogamoso, Boyacá</li>
+        </ul>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Enlaces</h3>
+        <ul class="link_menu">
+          <li><a href="index.html">Principal</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="gallery.html">Catálogo</a></li>
+          <li><a href="contact.html">Asesoría</a></li>
+        </ul>
+      </div>
+
+      <!-- Diseño -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Diseño NoroC</h3>
+        <p class="footer-text">Cada detalle transmite lujo, elegancia y autenticidad.</p>
+      </div>
+
+      <!-- Suscripción -->
+      <div class="col-md-6 offset-md-6">
+        <form class="bottom_form" id="subscribe-form">
+          <input class="enter" type="email" name="email" placeholder="Ingresa tu correo" required>
+          <button class="sub_btn" type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Logo y frase final -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="images/Noroc.png" alt="NoroC logo">
+      </div>
+      <p class="footer-quote">“El aroma es la memoria que nunca se olvida.”</p>
+    </div>
+  </div>
+</footer>
+
+<!-- End Footer -->
+<!-- Scripts JS necesarios -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+      <script src="js/carrito.js" defer></script>
+<script>
+  // ⏳ Efecto loader al entrar
+  $(window).on("load", function () {
+    $(".loader_bg").css({
+      opacity: 0,
+      transform: "scale(0.9)"
+    });
+    setTimeout(function () {
+      $(".loader_bg").remove();
+    }, 800);
+  });
+
+  // 🔍 Filtro de búsqueda y categoría
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const productCards = document.querySelectorAll('.product-card');
+
+    // Prevención: si falta algún elemento, salir
+    if (!searchInput || !categoryFilter || !productCards.length) return;
+
+    function filterCatalog() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const selectedCategory = categoryFilter.value.toLowerCase();
+
+      productCards.forEach(card => {
+        const name = (card.dataset.name || "").toLowerCase();
+        const category = (card.dataset.category || "").toLowerCase();
+
+        const matchesSearch = name.includes(searchTerm);
+        const matchesCategory = selectedCategory === 'all' || category.includes(selectedCategory);
+
+        if (matchesSearch && matchesCategory) {
+          card.classList.add('show');
+        } else {
+          card.classList.remove('show');
+        }
+      });
+    }
+
+    // Mostrar todas las tarjetas al cargar
+    productCards.forEach(card => card.classList.add('show'));
+
+    // Eventos de filtrado
+    searchInput.addEventListener('input', filterCatalog);
+    categoryFilter.addEventListener('change', filterCatalog);
+  });
+</script>
+<script>
+function extraerCatalogoDesdeHTML() {
+  const elementos = document.querySelectorAll(".product-card");
+  const catalogo = [];
+
+  elementos.forEach((el, index) => {
+    const nombre = el.querySelector("h2")?.textContent.trim();
+    const descripcion = el.querySelector("p")?.textContent.trim();
+    const precioTexto = descripcion.match(/\$\d[\d\.]*/)?.[0] || "$0";
+    const precio = parseInt(precioTexto.replace(/[^\d]/g, ""));
+    const imagen = el.querySelector("img")?.getAttribute("src");
+
+    if (nombre && precio && imagen) {
+      catalogo.push({
+        id: index + 1,
+        nombre,
+        precio,
+        imagen
+      });
+    }
+  });
+
+  localStorage.setItem("catalogo", JSON.stringify(catalogo));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  extraerCatalogoDesdeHTML();
+});
+
+</script>
+
+</body>
+</html>
+

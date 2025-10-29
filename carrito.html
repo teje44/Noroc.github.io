@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NoroC Perfumeria</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+            <!-- fevicon -->
+      <link rel="icon" href="images/Logo pw.png" type="image/gif" />
+      <!-- loader -->
+<link rel="stylesheet" href="css/loader.css">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+<!-- Loader -->
+<div class="loader_bg">
+  <div class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Descubre tu esencia...</p>
+  </div>
+</div>
+
+      <!-- end loader -->
+<!-- header -->
+<header>
+   <div class="header">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-md navbar-light bg-white p-0">
+            <!-- LOGO -->
+            <a class="navbar-brand p-2" href="index.html">
+               <img src="images/Noroc.png" alt="NoroC" class="logo-img">
+            </a>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Principal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catalogo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Asesoria.html">Asesoria</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="carrito.html">👜 <span class="cart-count">0</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+</header>
+<!-- end header -->
+       <div style="height: 2px; background-color: #009D71;"></div>
+       <!--end Line-->
+</head>
+<body class="bg-light">
+
+   <div class="carrito-container">
+    <h2 class="text-center mb-4">🛒 Tu carrito de compras</h2>
+
+    <table class="table table-bordered text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th>Producto</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Productos se agregan dinámicamente -->
+      </tbody>
+    </table>
+
+    <div class="text-right mt-4">
+      <h4>Total: $0.00</h4>
+      <div class="resumen-ahorro mt-2">
+        <p>Descuento aplicado: <span class="text-success">-$0.00</span></p>
+        <p class="font-weight-bold">Total con descuento: <span id="total-con-descuento">$0.00</span></p>
+      </div>
+<button id="btn-comprar" class="btn btn-noroc mt-3">Finalizar compra</button>
+
+
+  <div id="toast-noroc" class="toast-noroc"></div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Redes sociales -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Síguenos</h3>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/Noroc.Perfumeria/?locale=es_LA" class="social-btn" aria-label="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/noroc.perfumeria" class="social-btn" aria-label="Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-text">Descubre la esencia de NoroC. Conectamos emociones a través del aroma.</p>
+      </div>
+
+      <!-- Ayuda -->
+      <div class="col-md-3 col-sm-6">
+        <h3>¿Necesitas ayuda?</h3>
+        <p class="footer-text">Estamos aquí para asesorarte en tu elección perfecta.</p>
+        <ul class="contact_info">
+          <li><i class="fa fa-envelope"></i> norocperfumeria@gmail.com</li>
+          <li><i class="fa fa-phone"></i> +57 302 6010600</li>
+          <li><i class="fa fa-map-marker"></i> Sogamoso, Boyacá</li>
+        </ul>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Enlaces</h3>
+        <ul class="link_menu">
+          <li><a href="../index.html">Principal</a></li>
+          <li><a href="../Nosotros.html">Nosotros</a></li>
+          <li><a href="../Catalogo.html">Catálogo</a></li>
+          <li><a href="../Asesoria.html">Asesoría</a></li>
+        </ul>
+      </div>
+
+      <!-- Diseño -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Diseño NoroC</h3>
+        <p class="footer-text">Cada detalle transmite lujo, elegancia y autenticidad.</p>
+      </div>
+
+    <!-- Logo y frase final -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="../images/Noroc.png" alt="NoroC logo">
+      </div>
+      <p class="footer-quote">“El aroma es la memoria que nunca se olvida.”</p>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+<!-- scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/carrito.js" defer></script>
+
+<script>
+  $(window).on("load", function () {
+    $(".loader_bg").css({
+      opacity: 0,
+      transform: "scale(0.9)"
+    });
+    setTimeout(function () {
+      $(".loader_bg").remove();
+    }, 800);
+  });
+</script>
+<script>
+const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+const cuerpoTabla = document.querySelector("tbody");
+
+function actualizarTotales() {
+  const carritoActualizado = JSON.parse(localStorage.getItem('carrito')) || [];
+  let nuevoTotal = carritoActualizado.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+
+  const totalDisplay = document.querySelector(".text-right h4");
+  if (totalDisplay) {
+    totalDisplay.textContent = `Total: $${nuevoTotal.toFixed(2)}`;
+  }
+
+  const resumen = document.querySelector(".resumen-ahorro");
+  if (resumen) {
+    const descuento = nuevoTotal >= 100000 ? 10000 : 0;
+    const totalConDescuento = nuevoTotal - descuento;
+    resumen.querySelector(".text-success").textContent = `-$${descuento.toFixed(2)}`;
+    resumen.querySelector("#total-con-descuento").textContent = `$${totalConDescuento.toFixed(2)}`;
+  }
+
+  const contador = document.querySelector('.cart-count');
+  if (contador) {
+    const cantidad = carritoActualizado.reduce((acc, item) => acc + item.cantidad, 0);
+    contador.textContent = cantidad;
+  }
+}
+
+carrito.forEach((item, i) => {
+  const fila = document.createElement("tr");
+
+  // 🖼️ Imagen
+  const celdaImagen = document.createElement("td");
+  const img = document.createElement("img");
+  img.src = item.imagen || "./img/default.jpg";
+  img.alt = item.nombre;
+  img.width = 100;
+  img.height = 100;
+  img.style.objectFit = "cover";
+  img.style.borderRadius = "6px";
+  img.style.display = "block";
+  img.onerror = () => {
+    img.src = "./img/default.jpg";
+  };
+  celdaImagen.appendChild(img);
+
+  // 🏷️ Nombre
+  const celdaNombre = document.createElement("td");
+  celdaNombre.textContent = item.nombre;
+
+  // 💰 Precio
+  const celdaPrecio = document.createElement("td");
+  celdaPrecio.textContent = `$${item.precio.toFixed(2)}`;
+
+  // 🔢 Cantidad
+  const celdaCantidad = document.createElement("td");
+  const inputCantidad = document.createElement("input");
+  inputCantidad.type = "number";
+  inputCantidad.min = 1;
+  inputCantidad.value = item.cantidad;
+  inputCantidad.className = "form-control form-control-sm text-center";
+  inputCantidad.onchange = () => {
+    carrito[i].cantidad = parseInt(inputCantidad.value);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    celdaTotal.textContent = `$${(item.precio * item.cantidad).toFixed(2)}`;
+    actualizarTotales();
+  };
+  celdaCantidad.appendChild(inputCantidad);
+
+  // 📦 Total por producto
+  const celdaTotal = document.createElement("td");
+  celdaTotal.textContent = `$${(item.precio * item.cantidad).toFixed(2)}`;
+
+  // 🗑️ Acciones
+  const celdaAcciones = document.createElement("td");
+  const btnEliminar = document.createElement("button");
+  btnEliminar.className = "btn btn-danger btn-sm";
+  btnEliminar.innerHTML = '<i class="fa fa-trash"></i> Quitar';
+  btnEliminar.onclick = () => {
+    carrito.splice(i, 1);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    fila.remove();
+    actualizarTotales();
+    mostrarToast("🗑️ Producto eliminado");
+  };
+  celdaAcciones.appendChild(btnEliminar);
+
+  // 🧩 Agregar celdas
+  fila.appendChild(celdaImagen);
+  fila.appendChild(celdaNombre);
+  fila.appendChild(celdaPrecio);
+  fila.appendChild(celdaCantidad);
+  fila.appendChild(celdaTotal);
+  fila.appendChild(celdaAcciones);
+  cuerpoTabla.appendChild(fila);
+});
+
+// 🔔 Toast elegante
+function mostrarToast(mensaje) {
+  const toast = document.getElementById("toast-noroc");
+  if (!toast) return;
+  toast.textContent = mensaje;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 2000);
+}
+
+actualizarTotales();
+</script>
+
+
+<script>
+function obtenerSugerencias(catalogo, cantidad = 3) {
+  const copia = [...catalogo];
+  const sugerencias = [];
+
+  while (sugerencias.length < cantidad && copia.length > 0) {
+    const index = Math.floor(Math.random() * copia.length);
+    sugerencias.push(copia.splice(index, 1)[0]);
+  }
+
+  return sugerencias;
+}
+
+function renderizarSugerencias() {
+  const catalogo = JSON.parse(localStorage.getItem("catalogo")) || [];
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  const idsEnCarrito = carrito.map(p => p.id);
+  const catalogoFiltrado = catalogo.filter(p => !idsEnCarrito.includes(p.id));
+
+  const contenedor = document.getElementById("sugerencias-contenedor");
+  if (!contenedor) return;
+
+  contenedor.innerHTML = "";
+
+  const sugerencias = obtenerSugerencias(catalogoFiltrado, 3);
+
+  sugerencias.forEach((producto, i) => {
+    const card = document.createElement("div");
+    card.classList.add("producto-sugerido", "d-flex", "align-items-center");
+
+    card.innerHTML = `
+      <img src="${producto.imagen}" alt="${producto.nombre}" class="mr-3" style="width: 80px; height: auto; border-radius: 8px;">
+      <div>
+        <p class="mb-0 font-weight-bold">${producto.nombre}</p>
+        <p class="text-muted">$${producto.precio.toLocaleString()}</p>
+        <button class="btn btn-sm btn-noroc">Agregar al carrito</button>
+      </div>
+    `;
+
+    contenedor.appendChild(card);
+
+    setTimeout(() => {
+      card.classList.add("fade-in");
+    }, i * 150);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", renderizarSugerencias);
+
+document.getElementById("btn-comprar").addEventListener("click", () => {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  if (carrito.length === 0) {
+    alert("Tu carrito está vacío.");
+    return;
+  }
+
+  let mensaje = "🛍️ *Pedido NoroC*\n\n";
+  carrito.forEach(p => {
+    mensaje += `• ${p.nombre} x${p.cantidad} - $${p.precio * p.cantidad}\n`;
+  });
+
+  const total = carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
+  mensaje += `\n*Total:* $${total}\n`;
+  mensaje += "\nCliente: Gracias por tu compra ✨";
+
+  const numero = "573026010600"; // Reemplaza con el número real de NoroC
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+});
+
+
+</script>
+
+
+</body>
+</html>

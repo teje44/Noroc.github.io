@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Configuración básica -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Información del sitio -->
+  <title>Noroc Perfumería</title>
+  <meta name="keywords" content="perfumes, lujo, fragancias">
+  <meta name="description" content="Catálogo de perfumes exclusivos en Noroc Perfumería">
+  <meta name="author" content="Noroc">
+
+  <!-- ✅ Corrección de rutas CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/loader.css">
+  <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../images/Logo pw.png" type="image/gif">
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  <!-- Compatibilidad IE -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+   <!-- body -->
+   <body class="main-layout">
+<!-- Loader -->
+<div class="loader_bg">
+  <div class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Descubre tu esencia...</p>
+  </div>
+</div>
+
+      <!-- end loader -->
+<!-- header -->
+<header>
+   <div class="header">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-md navbar-light bg-white p-0">
+            <!-- LOGO -->
+            <a class="navbar-brand p-2" href="index.html">
+               <img src="images/Noroc.png" alt="NoroC" class="logo-img">
+            </a>
+
+            <!-- TOGGLER -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Principal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Galeria.html">Galeria</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catalogo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Asesoria.html">Asesoria</a></li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="carrito.html">👜 <span class="cart-count">0</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+</header>
+<!-- end header -->
+       <div style="height: 2px; background-color: #009D71;"></div>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+
+    }
+    .producto-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .producto-img {
+      flex: 1 1 40%;
+      min-width: 300px;
+    }
+    .producto-img img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .producto-info {
+      flex: 1 1 60%;
+      padding: 40px;
+    }
+    .producto-info h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .producto-info .precio {
+      font-size: 1.4rem;
+      color:#28a745;;
+      margin-bottom: 20px;
+    }
+    .producto-info .descripcion {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .btn-comprar {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-comprar:hover {
+      background-color: #28a745;
+    }
+    @media (max-width: 768px) {
+      .producto-container {
+        flex-direction: column;
+      }
+      .producto-info {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Producto One Million -->
+<div class="producto-container">
+  <div class="producto-img">
+    <img src="../images/OneMillion.png" alt="One Million Paco Rabanne">
+  </div>
+  <div class="producto-info">
+    <h1>One Million - Paco Rabanne</h1>
+    <div class="precio">$49.900</div>
+    <div class="descripcion">
+      <p>One Million es una fragancia atrevida, seductora y llena de lujo. Inspirada en el oro y el exceso, esta mezcla de pomelo, menta y cuero especiado crea una experiencia intensa e inolvidable.</p>
+      <p>Perfecta para hombres que disfrutan ser el centro de atención, con una actitud magnética y segura. Su empaque dorado es un símbolo de poder y éxito.</p>
+      <p>Con One Million, cada día se convierte en un desfile de confianza y glamour.</p>
+    </div>
+    <!-- Botón con data-attributes para carrito.js -->
+    <button class="btn-comprar"
+            data-id="prd-onemillion"
+            data-nombre="One Million - Paco Rabanne"
+            data-precio="49900"
+            data-cantidad="1"
+            data-imagen="images/OneMillion.png">
+      Comprar ahora
+    </button>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Redes sociales -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Síguenos</h3>
+        <ul class="social_icon">
+          <li>
+            <a href="https://www.facebook.com/Noroc.Perfumeria/?locale=es_LA" class="social-btn" aria-label="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/noroc.perfumeria" class="social-btn" aria-label="Instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-text">Descubre la esencia de NoroC. Conectamos emociones a través del aroma.</p>
+      </div>
+
+      <!-- Ayuda -->
+      <div class="col-md-3 col-sm-6">
+        <h3>¿Necesitas ayuda?</h3>
+        <p class="footer-text">Estamos aquí para asesorarte en tu elección perfecta.</p>
+        <ul class="contact_info">
+          <li><i class="fa fa-envelope"></i> norocperfumeria@gmail.com</li>
+          <li><i class="fa fa-phone"></i> +57 302 6010600</li>
+          <li><i class="fa fa-map-marker"></i> Sogamoso, Boyacá</li>
+        </ul>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Enlaces</h3>
+        <ul class="link_menu">
+          <li><a href="../index.html">Principal</a></li>
+          <li><a href="../Nosotros.html">Nosotros</a></li>
+          <li><a href="../Catalogo.html">Catálogo</a></li>
+          <li><a href="../Asesoria.html">Asesoría</a></li>
+        </ul>
+      </div>
+
+      <!-- Diseño -->
+      <div class="col-md-3 col-sm-6">
+        <h3>Diseño NoroC</h3>
+        <p class="footer-text">Cada detalle transmite lujo, elegancia y autenticidad.</p>
+      </div>
+
+    <!-- Logo y frase final -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="../images/Noroc.png" alt="NoroC logo">
+      </div>
+      <p class="footer-quote">“El aroma es la memoria que nunca se olvida.”</p>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="../js/carrito.js" defer></script>
+      <script>
+  $(window).on("load", function () {
+    $(".loader_bg").css({
+      opacity: 0,
+      transform: "scale(0.9)"
+    });
+    setTimeout(function () {
+      $(".loader_bg").remove();
+    }, 800);
+  });
+</script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+
+</body>
+</html>
